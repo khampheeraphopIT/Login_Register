@@ -1,0 +1,155 @@
+* { /*reset ค่าทั้งหมดในเ Webpage*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav { /*ปรับในส่วนของ nav*/
+    width: 100%;
+    position: fixed;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.menu li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #00a6ff;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+
+.nav-con .button-btn {
+    background-color: #5695F4;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.logo-home img { /*ของ home*/
+    width: 70px;
+    height: 70px;
+}
+
+.logo img { /*ของ popup*/
+    width: 70px;
+    height: 70px;
+}
+
+.header {
+    background:url(../images/banner.jpg) no-repeat ; /*no repeat คือการไม่ให้ทำซ้ำ*/
+    width: 100%;
+    height: 650px;
+    background-size: cover; /*ทำให้ภาพพื้นหลังครอบคลุมในส่วนของ class ทั้งหมด*/
+    background-position: center center; /*การปรับภาพให้บน ล่าง ซ้าย ขวา อยู่ตรงกลาง*/
+}
+
+
+.banner .dot-btn1 {
+        background-color: #d7d4d4;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 35px; /* ตำแหน่งล่างของ .banner */
+        left: 20px; /* ตำแหน่งซ้ายของ .banner */
+        margin-left: 45rem;
+}
+
+.banner .dot-btn2 {
+    background-color: #d7d4d4;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 35px; /* ตำแหน่งล่างของ .banner */
+    left: 50px; /* ตำแหน่งซ้ายของ .banner */
+    margin-left: 45rem;
+}
+
+.banner .dot-btn3 {
+    background-color: #d7d4d4;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 35px; /* ตำแหน่งล่างของ .banner */
+    left: 80px; /* ตำแหน่งซ้ายของ .banner */
+    margin-left: 45rem;
+}
+
+.form-container {
+    width: 30%;
+}
+
+.Login {
+    background-image: url(../images/img01.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.form-container h3 {
+    color: #ffffff;
+}
+
+.form-container label {
+    color: #ffffff;
+}
+
+.form-container p {
+    color: #ffffff;
+}
+.Register {
+    background-image: url(../images/img01.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-container .Text-center {
+    text-align: center;
+}
+
+.btn {
+    color: #ffffff;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn:hover {
+    border: 2px solid #000000;
+    transition: 0.4ms;
+}
+
+@media only screen and (max-width: 1000px) {
+    .form-container {
+        width: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 770px) {
+    .form-container {
+        width: 65%;
+    }
+}
