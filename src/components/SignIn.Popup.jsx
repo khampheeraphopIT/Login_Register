@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import logo from '../images/logo.png'
 import facebook from '../images/facebook.png'
 import google from '../images/google.png'
-import SignUp from './SignUp.Popup';
+import Signup from './Signup';
 
 const SignIn = ({ isOpen, onClose }) => {
   const [isSignUpOpen, setIsSignUpOpen] = useState(false);
@@ -28,8 +28,8 @@ const SignIn = ({ isOpen, onClose }) => {
             <input type="password" placeholder='password' />
         </div>
         <div className='form-button'>
-            <h3 className='btn btn-primary'><Link to="/" onClick={onClose}>Sign In</Link></h3>
-            <h3 className='btn btn-primary'><Link to="/" onClick={toggleSignUp}>Sign Up</Link></h3>
+            <h3 className='btn btn-primary'><Link to="/#" onClick={onClose}>Sign In</Link></h3>
+            <h3 className='btn btn-primary'><Link to="/Signup" onClick={toggleSignUp}>Sign Up</Link></h3>
         </div>
         <div className='form-icon'>
             <h3 className='facebook'><Link to="/"><img src={facebook} alt="" /></Link></h3>
@@ -37,8 +37,7 @@ const SignIn = ({ isOpen, onClose }) => {
         </div>
         <button className="close-button" onClick={onClose}>X</button>
       </div>
-        <SignUp isOpen={isSignUpOpen} onClose={toggleSignUp} />
-    </div>
+      </div>
   );
 };
 

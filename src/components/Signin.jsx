@@ -1,7 +1,6 @@
 import React from 'react'
 import './style.css'
 import { Link } from 'react-router-dom'
-import SignUp from './Signup'
 
 function SignIn() {
     return (
@@ -30,7 +29,7 @@ function SignIn() {
                     <p className='text-right mt-2'>
                         Forgot <Link to="/SignUp">Password ?</Link>
                     </p>
-                    <p className='text-right'>Don't have an account? <Link to="/Signup">Register</Link>
+                    <p className='text-right'>Don't have an account? <Link to="/SignUp">Register</Link>
                     </p>
                 
                 </form>

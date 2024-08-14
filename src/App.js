@@ -13,7 +13,6 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/SignIn' element={<SignIn />}></Route>
         <Route path='/Booknow' element={<Home/>}></Route>
-        <Route path='/SignUp' element={<SignUp />}></Route>
         <Route path='/Signup' element={<Signup />}></Route>
       </Routes>
     </BrowserRouter>

@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import nationality from '../nationality'
 
-
 function SignUp() {
     return (
         <div className='Register d-flex justify-content-center align-items-center

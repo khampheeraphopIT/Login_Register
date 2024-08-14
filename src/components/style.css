@@ -4,6 +4,37 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Room {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #dddfc1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.5rem;
+    width: 100%;
+}
+
+.Details {
+    padding: 1rem;
+    background-color: #f4f4f3;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.text img {
+    width: 100%;
+    height: auto;
+}
+
+.Details .text {
+    font-size: large;
+}
+
 nav { /*ปรับในส่วนของ nav*/
     width: 100%;
     position: fixed;
@@ -60,43 +91,6 @@ nav { /*ปรับในส่วนของ nav*/
     background-position: center center; /*การปรับภาพให้บน ล่าง ซ้าย ขวา อยู่ตรงกลาง*/
 }
 
-
-.banner .dot-btn1 {
-        background-color: #d7d4d4;
-        border: none;
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        bottom: 35px; /* ตำแหน่งล่างของ .banner */
-        left: 20px; /* ตำแหน่งซ้ายของ .banner */
-        margin-left: 45rem;
-}
-
-.banner .dot-btn2 {
-    background-color: #d7d4d4;
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 35px; /* ตำแหน่งล่างของ .banner */
-    left: 50px; /* ตำแหน่งซ้ายของ .banner */
-    margin-left: 45rem;
-}
-
-.banner .dot-btn3 {
-    background-color: #d7d4d4;
-    border: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    bottom: 35px; /* ตำแหน่งล่างของ .banner */
-    left: 80px; /* ตำแหน่งซ้ายของ .banner */
-    margin-left: 45rem;
-}
-
 .form-container {
     width: 30%;
 }
@@ -141,9 +135,42 @@ nav { /*ปรับในส่วนของ nav*/
     transition: 0.4ms;
 }
 
+.SearchRoom {
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.SearchRoom button {
+    margin: 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 6rem;
+    border: 2px solid #52a0f8;
+    background-color: #28067c;
+    color: #ffffff;
+    border-radius:5px; 
+    font-family: Arial, Helvetica, sans-serif
+}
+
 @media only screen and (max-width: 1000px) {
     .form-container {
         width: 45%;
+    }
+    .Room {
+        width: 100%;
     }
 
 }
@@ -151,5 +178,8 @@ nav { /*ปรับในส่วนของ nav*/
 @media only screen and (max-width: 770px) {
     .form-container {
         width: 65%;
+    }
+    .Room {
+        width: 100%;
     }
 }
